@@ -1,0 +1,7 @@
+{
+  "name": "temporal_pattern_analysis",
+  "description": "Reduce scoped events in Splunk, analyse time-series behaviour with fast Python libraries, and return structured trends plus human-readable graphs.",
+  "version": 1,
+  "role": "analysis",
+  "phase": "RECOVERY"
+}

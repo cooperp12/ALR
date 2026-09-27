@@ -1,0 +1,20 @@
+{
+  "name": "email_investigation",
+  "version": 1,
+  "description": "Find notification/email evidence in BOTSv3 without flooding the model with full MIME bodies.",
+  "baseline": false,
+  "triggers": [
+    "email",
+    "notification",
+    "support case",
+    "message",
+    "repository"
+  ],
+  "tools": [
+    "search_oneshot",
+    "search_export"
+  ],
+  "stopping_condition": "Stop when sufficient evidence exists for the requested fact.",
+  "role": "domain",
+  "phase": "PRIMARY_ANALYSIS"
+}

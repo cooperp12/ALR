@@ -1,0 +1,34 @@
+.venv/
+runtime/
+config/credentials.json
+config/openai_key.txt
+__pycache__/
+*.pyc
+.pytest_cache/
+.pytest_tmp/
+.pytest_replay_tmp/
+ALR_*.json
+ALR_*.jsonl
+ALR_*.log
+ALR_*.sqlite
+ALR_*.sqlite-shm
+ALR_*.sqlite-wal
+ALR_artifacts/
+reports/
+
+ALR_benchmark_archive/
+
+# ALR local runtime
+.venv/
+runtime/
+__pycache__/
+.pytest_cache/
+*.pyc
+
+# Credentials and local state
+config/credentials.json
+*.env
+
+# Logs and generated evidence
+*.log
+*.jsonl

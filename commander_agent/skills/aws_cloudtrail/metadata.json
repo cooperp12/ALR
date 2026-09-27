@@ -1,0 +1,26 @@
+{
+  "name": "aws_cloudtrail",
+  "version": 2,
+  "description": "Investigate AWS API activity using the correct CloudTrail sourcetype and real CloudTrail fields.",
+  "baseline": false,
+  "triggers": [
+    "aws",
+    "iam",
+    "access key",
+    "ec2",
+    "cloud image",
+    "ami",
+    "user agent",
+    "runinstances"
+  ],
+  "tools": [
+    "search_oneshot",
+    "search_export"
+  ],
+  "stopping_condition": "Stop when sufficient evidence exists for the requested fact.",
+  "query_contracts": {
+    "do_requires": "sourcetype=aws:cloudtrail for AWS primary searches"
+  },
+  "role": "domain",
+  "phase": "PRIMARY_ANALYSIS"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "cloudtrail_identity_expansion",
+  "triggers": [
+    "compromised IAM user",
+    "derived credentials",
+    "temporary credentials",
+    "GetSessionToken",
+    "STS",
+    "related identity"
+  ],
+  "priority": 86,
+  "description": "Expand an evidence-validated AWS credential into its stable IAM principal and evidence-linked temporary credentials before following later activity."
+}

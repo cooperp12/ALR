@@ -1,0 +1,7 @@
+{
+  "name": "scope_invariant_guard",
+  "description": "Validate an explicitly justified investigation-scope change before any query may weaken the current question scope.",
+  "version": 1,
+  "role": "control",
+  "phase": "RECOVERY"
+}

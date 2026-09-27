@@ -1,0 +1,81 @@
+{
+  "version": 4,
+  "stages": [
+    {
+      "id": "UNDERSTAND",
+      "goal": "Establish the requested entity, quantity, population, timeframe, and invariants."
+    },
+    {
+      "id": "CLASSIFY",
+      "goal": "Choose the primary analytical family without letting optional recovery skills redefine the question."
+    },
+    {
+      "id": "PRIMARY_ANALYSIS",
+      "goal": "Obtain direct scoped machine evidence for the requested quantity."
+    },
+    {
+      "id": "RECOVERY",
+      "goal": "Resolve the current evidence gap using the best still-useful capability."
+    },
+    {
+      "id": "VALIDATE",
+      "goal": "Require materially independent, consistent support for a candidate."
+    },
+    {
+      "id": "ANSWER",
+      "goal": "Return only validated work."
+    }
+  ],
+  "recovery_capabilities": [
+    {
+      "name": "semantic_field_review",
+      "scope_class": "same_scope",
+      "description": "Test whether the current field or representation matches the concept requested by the question."
+    },
+    {
+      "name": "schema_inspection",
+      "scope_class": "same_scope",
+      "description": "Inspect relevant fields or representative events without changing the current population."
+    },
+    {
+      "name": "alternative_aggregation",
+      "scope_class": "same_scope",
+      "description": "Calculate the requested quantity by a materially different same-scope method."
+    },
+    {
+      "name": "temporal_pattern_analysis",
+      "scope_class": "same_scope",
+      "description": "Use deterministic time-series and diversity analysis when temporal behaviour can reduce ambiguity."
+    },
+    {
+      "name": "relationship_analysis",
+      "scope_class": "same_scope",
+      "description": "Examine entity/resource relationships that can distinguish hypotheses while preserving population scope."
+    },
+    {
+      "name": "scope_expansion",
+      "scope_class": "scope_change",
+      "description": "Broaden population or source only after same-scope routes are exhausted or declared irrelevant and the change is independently justified."
+    }
+  ],
+  "terminal_capabilities": [
+    "candidate_validation",
+    "stop",
+    "error"
+  ],
+  "orchestration_policy": {
+    "assignment": "supervisor_orders_python_assigns_one",
+    "child_failure": "return_to_supervisor",
+    "loop_key": "goal_signature_plus_capability",
+    "scope_expansion": "only_after_same_scope_routes_exhausted_or_irrelevant",
+    "stop_unresolved": "only_when_no_applicable_route_remains",
+    "investigator_contract": "capability_specific_tiny_schema",
+    "candidate_assessment": "separate_non_routing_contract",
+    "query_reuse": "block_semantically_equivalent_prior_evidence",
+    "action_query_consistency": "declared_scope_change_must_change_search_scope",
+    "measurement_semantics": "model_selects_stable_measurement_id_python_reconstructs_contract"
+  },
+  "control_skills": [
+    "measurement_semantics_resolution"
+  ]
+}

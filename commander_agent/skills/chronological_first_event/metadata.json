@@ -1,0 +1,19 @@
+{
+  "name": "chronological_first_event",
+  "version": 1,
+  "description": "Correctly identify the first/earliest attempt by explicit chronological ordering.",
+  "baseline": false,
+  "triggers": [
+    "first attempt",
+    "first event",
+    "earliest",
+    "initial attempt"
+  ],
+  "tools": [
+    "search_oneshot",
+    "search_export"
+  ],
+  "stopping_condition": "Stop when sufficient evidence exists for the requested fact.",
+  "role": "analysis",
+  "phase": "PRIMARY_ANALYSIS"
+}

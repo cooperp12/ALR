@@ -1,0 +1,20 @@
+{
+  "name": "json_nested_fields",
+  "version": 1,
+  "description": "Extract nested JSON values such as requestParameters, responseElements, or userIdentity safely and compactly.",
+  "baseline": false,
+  "triggers": [
+    "requestparameters",
+    "specific resource",
+    "target resource",
+    "create a key",
+    "createaccesskey"
+  ],
+  "tools": [
+    "search_oneshot",
+    "search_export"
+  ],
+  "stopping_condition": "Stop when sufficient evidence exists for the requested fact.",
+  "role": "analysis",
+  "phase": "RECOVERY"
+}

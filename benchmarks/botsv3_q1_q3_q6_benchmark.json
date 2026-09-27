@@ -1,0 +1,22 @@
+{
+  "Q1": {
+    "name": "AWS support case ID",
+    "difficulty": "direct extraction / email source routing",
+    "question": "Bud accidentally commits AWS access keys to an external code repository. Shortly after, he receives a notification from AWS that the account had been compromised. What is the support case ID that Amazon opens on his behalf?"
+  },
+  "Q2": {
+    "name": "Leaked-key user agent",
+    "difficulty": "direct extraction / discovery before specificity",
+    "question": "Using a leaked AWS key AKIAJOGCDXJ5NW5PXUPA, the adversary makes an unauthorized attempt to describe an account. What is the full user agent string of the application that originated the request?"
+  },
+  "Q3": {
+    "name": "Most distinct IAM errors",
+    "difficulty": "aggregation / semantic measurement contract",
+    "question": "What IAM user access key generates the most distinct errors when attempting to access IAM resources?"
+  },
+  "Q6": {
+    "name": "First Ubuntu EC2 launch codename",
+    "difficulty": "sequence state / chronology / external AMI enrichment",
+    "question": "The adversary attempts to launch an Ubuntu cloud image as the compromised IAM user. What is the codename for that operating system version in the first attempt? Answer guidance: Two words."
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "splunk_host": "127.0.0.1",
+  "splunk_port": "8089",
+  "splunk_verify_ssl": false,
+  "splunk_container_name": "splunk-botsv3",
+  "openai_reasoning_enabled": false,
+  "openai_luna_model": "gpt-5.6-luna",
+  "openai_terra_model": "gpt-5.6-terra",
+  "mcp_python": ".venv/Scripts/python.exe",
+  "mcp_server": "runtime/splunk-mcp-server2/python/server.py",
+  "mcp_cwd": "runtime/splunk-mcp-server2/python",
+  "ollama_investigator_model": "gpt-oss:20b",
+  "ollama_supervisor_model": "granite4.2:8b",
+  "ollama_investigator_num_ctx": 8192,
+  "ollama_supervisor_num_ctx": 8192,
+  "ollama_investigator_think": "low",
+  "ollama_supervisor_think": false,
+  "ollama_role_keep_alive": "0s",
+  "ollama_investigator_num_predict": 1800,
+  "ollama_investigator_retry_num_predict": 2800,
+  "ollama_supervisor_num_predict": 900,
+  "ollama_supervisor_retry_num_predict": 1400
+}

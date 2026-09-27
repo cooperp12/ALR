@@ -1,0 +1,14 @@
+{
+  "name": "botsv3_historical",
+  "version": 1,
+  "description": "Correctly search BOTSv3 as historical training data and avoid recent relative-time mistakes.",
+  "baseline": true,
+  "triggers": [],
+  "tools": [
+    "search_oneshot",
+    "search_export"
+  ],
+  "stopping_condition": "Stop when sufficient evidence exists for the requested fact.",
+  "role": "environment",
+  "phase": "UNDERSTAND"
+}

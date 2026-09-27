@@ -1,0 +1,25 @@
+{
+  "name": "external_enrichment",
+  "version": 1,
+  "description": "Follow a public URL or research an identifier such as an AMI when Splunk alone cannot provide the final semantic answer.",
+  "baseline": false,
+  "triggers": [
+    "github",
+    "external code repository",
+    "url",
+    "link",
+    "codename",
+    "ami",
+    "cloud image",
+    "look up",
+    "lookup",
+    "research"
+  ],
+  "tools": [
+    "search_oneshot",
+    "search_export"
+  ],
+  "stopping_condition": "Stop when sufficient evidence exists for the requested fact.",
+  "role": "analysis",
+  "phase": "RECOVERY"
+}

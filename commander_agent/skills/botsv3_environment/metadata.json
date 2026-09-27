@@ -1,0 +1,14 @@
+{
+  "name": "botsv3_environment",
+  "version": 1,
+  "description": "Preload the stable BOTSv3 index, historical timeframe, and common sourcetypes so investigations do not waste tool calls rediscovering them.",
+  "baseline": true,
+  "triggers": [],
+  "tools": [
+    "search_oneshot",
+    "search_export"
+  ],
+  "stopping_condition": "Stop when sufficient evidence exists for the requested fact.",
+  "role": "environment",
+  "phase": "UNDERSTAND"
+}

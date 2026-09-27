@@ -1,0 +1,22 @@
+ALR legacy compatibility validation
+=================
+
+Development-tree regression suite:
+183 passed
+
+Pre-release extracted-package regression suite:
+183 passed
+
+Key ALR legacy compatibility additions validated:
+- direct official Ubuntu release-page codename resolution from an evidenced version
+- direct official-source disagreement fails closed
+- search-engine fallback is bypassed when direct official pages resolve
+- >100-event chronology regression remains correct
+- raw boundary verification and anomaly-only Worker/Supervisor controls remain intact
+- Windows source reads use explicit UTF-8
+- setup prints visible per-test progress instead of an opaque dot-only pause
+
+Contamination boundary:
+PASS - no plaintext benchmark expected fields in benchmark question JSON
+PASS - no local Ubuntu release/codename catalogue
+PASS - no known live Q6 answer or live Q6 AMI literals in runtime/tests/docs

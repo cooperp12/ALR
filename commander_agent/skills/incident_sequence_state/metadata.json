@@ -1,0 +1,12 @@
+{
+  "name": "incident_sequence_state",
+  "triggers": [
+    "same incident",
+    "previous question",
+    "compromised user",
+    "adversary",
+    "sequence"
+  ],
+  "priority": 80,
+  "description": "Reuse validated facts from earlier questions in the same investigation sequence."
+}

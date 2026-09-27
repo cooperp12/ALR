@@ -1,0 +1,14 @@
+{
+  "name": "splunk_query_efficiency",
+  "version": 1,
+  "description": "Keep Splunk queries targeted and reduce results before they reach the LLM context window.",
+  "baseline": true,
+  "triggers": [],
+  "tools": [
+    "search_oneshot",
+    "search_export"
+  ],
+  "stopping_condition": "Stop when sufficient evidence exists for the requested fact.",
+  "role": "control",
+  "phase": "PRIMARY_ANALYSIS"
+}

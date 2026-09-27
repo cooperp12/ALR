@@ -1,0 +1,11 @@
+{
+  "name": "ami_release_resolution",
+  "triggers": [
+    "ami",
+    "cloud image",
+    "ubuntu codename",
+    "operating system version"
+  ],
+  "priority": 90,
+  "description": "Resolve an exact EC2 AMI to an Ubuntu release and codename using external evidence."
+}

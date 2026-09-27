@@ -1,0 +1,17 @@
+{
+  "name": "measurement_semantics_resolution",
+  "version": 1,
+  "description": "Select one existing complete machine measurement that best represents the conceptual quantity requested by the user; Python owns all field/provenance reconstruction and winner derivation.",
+  "baseline": false,
+  "triggers": [
+    "multiple complete measurements",
+    "distinct-count semantic ambiguity",
+    "coarse field representation",
+    "measurement contract required"
+  ],
+  "tools": [],
+  "stopping_condition": "Return one existing measurement_id when the semantic mapping is defensible; otherwise return null and explain the ambiguity.",
+  "decision_contract": "Return only selected_measurement_id, reason, and confidence. Never return field names, support IDs, SPL, candidates, winners, or scope changes.",
+  "role": "control",
+  "phase": "RECOVERY"
+}

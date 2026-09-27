@@ -1,0 +1,9 @@
+{
+  "name": "investigation_supervisor",
+  "version": 2,
+  "description": "A separate supervisory agent that evaluates progress, remaining gaps, skill-path exhaustion, backtracking, validation readiness, and stop eligibility without solving the investigation itself.",
+  "baseline": false,
+  "role": "control",
+  "stopping_condition": "The supervisor may allow stop only when applicable investigation paths are exhausted, irrelevant, or blocked and no new evidence-producing route remains.",
+  "phase": "RECOVERY"
+}

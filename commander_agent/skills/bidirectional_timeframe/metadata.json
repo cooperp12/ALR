@@ -1,0 +1,43 @@
+{
+  "name": "bidirectional_timeframe",
+  "version": 3,
+  "description": "Build and reuse an evidence-backed event map around a versioned T0 anchor, including before/after positioning and entity relationships.",
+  "baseline": false,
+  "triggers": [
+    "before and after",
+    "before/after",
+    "what happened before",
+    "what happened after",
+    "what happened next",
+    "leading up to",
+    "following activity",
+    "follow-on",
+    "timeline",
+    "trace the compromise",
+    "blast radius",
+    "precursor",
+    "lateral movement",
+    "sequence of events"
+  ],
+  "tools": [
+    "query_timeline",
+    "set_timeline_anchor",
+    "timeline_before",
+    "timeline_after",
+    "timeline_between",
+    "timeline_entities",
+    "timeline_related",
+    "timeline_map",
+    "search_oneshot"
+  ],
+  "stopping_condition": "Stop when map-first reuse plus evidence-backed before/after context is sufficient for the question.",
+  "case_map_reuse": true,
+  "widening": [
+    "+/-30m",
+    "+/-2h",
+    "+/-24h"
+  ],
+  "engine": "scripts/timeline_engine.py",
+  "role": "analysis",
+  "phase": "PRIMARY_ANALYSIS"
+}

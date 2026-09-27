@@ -1,0 +1,21 @@
+{
+  "name": "result_semantics_recovery",
+  "version": 8,
+  "description": "Investigator recovery layer with durable observations, stable measurement IDs, narrow measurement-semantics selection, and deterministic supervisor-controlled failover.",
+  "baseline": false,
+  "triggers": [
+    "ambiguous result",
+    "semantic mismatch",
+    "unsupported inference",
+    "aggregation interpretation",
+    "validation conflict"
+  ],
+  "tools": [
+    "search_oneshot",
+    "search_export"
+  ],
+  "stopping_condition": "Stop when the requested concept is directly supported by independent evidence, or when bounded semantic recovery cannot produce new evidence.",
+  "decision_contract": "Each assigned capability returns only its own minimal schema; candidate assessment is a separate non-routing contract; Python executes and validates transitions.",
+  "role": "investigator",
+  "phase": "RECOVERY"
+}

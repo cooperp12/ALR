@@ -1,0 +1,25 @@
+{
+  "name": "spl_distinct_count",
+  "version": 5,
+  "description": "Bootstrap distinct/unique investigations with reducing aggregation; treat the inferred distinct field as a hypothesis and delegate field meaning/granularity and recovery to result_semantics_recovery.",
+  "baseline": false,
+  "triggers": [
+    "distinct",
+    "unique",
+    "different errors",
+    "most errors"
+  ],
+  "tools": [
+    "search_oneshot",
+    "search_export"
+  ],
+  "stopping_condition": "Stop when sufficient evidence exists for the requested fact.",
+  "query_contracts": {
+    "do_requires": "stats dc(...) reducing aggregation",
+    "check_prefers": "values(...) initial check; semantic skill may choose two-stage aggregation, schema inspection, or another materially different evidence path"
+  },
+  "strategy_script": "scripts/query_templates.py",
+  "semantic_review_skill": "result_semantics_recovery",
+  "role": "analysis",
+  "phase": "PRIMARY_ANALYSIS"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "structured_output_validation",
+  "version": 2,
+  "description": "Validate JSON/tool/query objects before they are trusted, cached, or persisted; classify nested infrastructure errors and reject malformed/error objects instead of turning them into evidence.",
+  "baseline": true,
+  "triggers": [
+    "json",
+    "structured output",
+    "tool result",
+    "query object"
+  ],
+  "tools": [],
+  "stopping_condition": "Structured data is accepted only after schema and JSON round-trip validation.",
+  "implementation": "scripts/schema.py",
+  "role": "control",
+  "phase": "VALIDATE"
+}
