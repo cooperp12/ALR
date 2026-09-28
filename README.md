@@ -1,9 +1,5 @@
 # ALR — Agentic Log Retrieval
 
-https://img.shields.io/badge/Project-Agentic%20Log%20Retrieval-blue
-https://img.shields.io/badge/Python-3.x-green
-https://img.shields.io/badge/AI-Agentic%20Framework-purple
-
 ## Overview
 
 **Agentic Log Retrieval (ALR)** is an evidence-driven AI security investigation framework designed to assist analysts with complex cybersecurity investigations by combining agentic reasoning with deterministic evidence validation.
